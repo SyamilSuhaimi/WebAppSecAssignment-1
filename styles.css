@@ -1,0 +1,83 @@
+body {
+    background-color: #E1F5FE; /* Cloud Blue Background */
+    text-align: center; /* Center-align paragraphs */
+}
+
+header {
+    background-color: #039BE5; /* Blue Header */
+    color: #FFFFFF; /* White Text */
+    padding: 20px;
+}
+
+nav {
+    text-align: center; /* Center-align navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block; /* Set display to inline-block */
+    background-color: #03A9F4; /* Blue Navigation Background */
+}
+
+nav li {
+    display: inline; /* Display list items inline */
+}
+
+nav li a {
+    display: block;
+    color: #FFFFFF; /* White Text */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #01579B; /* Darker Blue Hover Color */
+}
+
+nav li a.active {
+    background-color: #01579B; /* Darker Blue Active Page Color */
+}
+
+footer {
+    background-color: #01579B; /* Blue Footer */
+    color: #FFFFFF; /* White Text */
+    padding: 20px;
+}
+
+section {
+    margin: 50px auto; /* Center-align section */
+    max-width: 800px; /* Set maximum width for content */
+    padding: 20px;
+    background-color: #FFFFFF; /* White Content Background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* CSS for zoom functionality */
+.mind-map-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.mind-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.mind-map img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mind-map img.zoomed {
+    transform: scale(1.5); /* Increase the scale for zoom effect */
+}
+
